@@ -1,6 +1,6 @@
 //
 //  main.c
-//  03 실습1
+//  03 실습3
 //
 //  Created by 이예림 on 9/21/25.
 //
@@ -8,15 +8,13 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    int input_int;
-    float input_float;
+    char c;
+    char d;
     
-    printf("enter an integer : ");
-    scanf("%d", &input_int);
+    printf("enter a character : ");
+    scanf("%c", &c);
+    d = c + 1;
     
-    printf("enter a float : ");
-    scanf("%f", &input_float);
-    
-    printf("integer : %d, float : %f\n", input_int, input_float);
+    printf("The next character of %c (%i) is %c (%i) \n", c, c, d, d);
     return 0;
 }
