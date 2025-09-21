@@ -1,6 +1,6 @@
 //
 //  main.c
-//  03 실습4
+//  03 실습2
 //
 //  Created by 이예림 on 9/21/25.
 //
@@ -8,14 +8,14 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    int a,b;
+    char c;
+    int i;
     
-    printf("분자를 입력하세요 : ");
-    scanf("%d", &a);
+    printf("input a number : ");
+    scanf("%c", &c);
     
-    printf("분모를 입력하세요 : ");
-    scanf("%d", &b);
+    i = c-'0';
+    printf("The input number is %i\n", i);
     
-    printf("나누기의 결과는 %.6f 입니다.\n", (float)a/b);
     return 0;
 }
